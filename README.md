@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Shree
+- 👋 Hi, I’m @Shrikant yadwad
 - 👀 I’m interested in building apps and website 
 - 🌱 I’m currently learning sql and python
 - 💞️ I’m looking to collaborate on tech stuff
