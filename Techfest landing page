@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Techfest, IIT Bombay - 2025</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle, #04264c 0%, #0f1a31 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-size: 2.8em;
+      letter-spacing: 0.02em;
+      margin: 0.5em 0 0.3em 0;
+      line-height: 1.1;
+    }
+    .subtitle {
+      font-size: 1.35em;
+      color: #65dbfd;
+      margin-bottom: 2em;
+    }
+    .hero-animation {
+      width: 220px;
+      height: 220px;
+      margin: 0 auto 1.5em auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .orbit {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px dashed #9df9ef33;
+      animation: rotate 6s linear infinite;
+    }
+    .dot {
+      width: 34px;
+      height: 34px;
+      background: #65dbfd;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      transform: translateX(-50%);
+      box-shadow: 0 0 18px #65dbfd88;
+      animation: bounce 2s infinite cubic-bezier(.5, .05, 1, .5);
+    }
+    @keyframes rotate {
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes bounce {
+      0%, 100% { top: 8px;}
+      50% { top: -20px;}
+    }
+    .cta-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #056bfa 5%, #41c8ed 95%);
+      color: #fff;
+      font-size: 1.1em;
+      font-weight: 700;
+      letter-spacing: .05em;
+      border: none;
+      border-radius: 32px;
+      padding: 14px 44px;
+      margin-top: 2.2em;
+      box-shadow: 0 7px 21px -4px #056bfa44;
+      cursor: pointer;
+      transition: background 0.24s, transform 0.18s;
+    }
+    .cta-btn:hover {
+      background: linear-gradient(90deg, #41c8ed 5%, #056bfa 95%);
+      transform: scale(1.05);
+    }
+    .footer {
+      margin-top: 4em;
+      font-size: 0.93em;
+      color: #d4eeff9a;
+      letter-spacing: 0.01em;
+    }
+    @media (max-width: 520px){
+      h1 { font-size: 2em; }
+      .hero-animation { width: 160px; height: 160px; }
+      .dot { width: 22px; height: 22px; }
+      .cta-btn { padding: 10px 22px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero-animation">
+      <div class="orbit"></div>
+      <div class="dot"></div>
+    </div>
+    <h1>Welcome to Techfest</h1>
+    <div class="subtitle">
+      Fueling Asia’s Biggest Tech Movement at IIT Bombay
+    </div>
+    <a href="#register" class="cta-btn">
+      Join the Revolution
+    </a>
+    <div class="footer">
+      Crafted with passion for Techfest, IIT Bombay 2025 &mdash; by Shrikant Yadwad
+    </div>
+  </div>
+</body>
+</html>
+
